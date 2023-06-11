@@ -1,0 +1,15 @@
+#### Windows Terragrunt gitignore
+*\.terragrunt-source-manifest
+*\.terragrunt-source-version
+*\.terragrunt-module-manifest
+*\.terraform.lock.hcl
+*\terraform-provider-aws*
+*\.terragrunt-cache
+
+#### MAC Terragrunt gitignore
+*/.terragrunt-source-manifest
+*/.terragrunt-source-version
+*/.terragrunt-module-manifest
+*/.terraform.lock.hcl
+*/terraform-provider-aws*
+*/.terragrunt-cache
