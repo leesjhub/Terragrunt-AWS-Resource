@@ -7,11 +7,10 @@ locals {
     Project_code            = lookup(local.Share_vars.locals, "Project_code")
     Environment             = lookup(local.Share_vars.locals, "Environment")
 
-    #### remote state configure
+    #### backend remote state configure
     remote_state_bucket     = "s3-an2-sha-dev-terragrunt"
-    Account_alias           = "lsj-sha"
     s3_authorized_profile   = "mzc-cn-lsj"
-    Bucket_prefix           = "${local.Account_alias}-${local.Project_code}-${local.Environment}"
+    Bucket_prefix           = "${local.Project_code}-${local.Environment}"
 }
  
 generate   = local.Share_vars.generate
